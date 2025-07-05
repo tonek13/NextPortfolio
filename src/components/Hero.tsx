@@ -1,8 +1,10 @@
 'use client';
 
-import { Typewriter } from 'react-simple-typewriter';
+import { useTypewriter } from '@/hooks/useTypewriter';
 
 export default function Hero() {
+  const typedText = useTypewriter(['Developer', 'Freelancer', 'Designer']);
+
   return (
     <section
       id="hero"
@@ -17,15 +19,8 @@ export default function Hero() {
           <h2 className="text-2xl md:text-3xl font-light">
             I&apos;m{' '}
             <span className="text-cyan-400 font-semibold">
-              <Typewriter
-                words={['Developer', 'Freelancer', 'Designer']}
-                loop
-                cursor
-                cursorStyle="|"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1500}
-              />
+              {typedText}
+              <span className="animate-pulse">|</span>
             </span>
           </h2>
         </div>
