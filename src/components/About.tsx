@@ -1,7 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { FaChevronRight } from 'react-icons/fa6';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
 
 
 export default function About() {
@@ -50,7 +51,8 @@ export default function About() {
                 ['Freelance', 'Available'],
               ].map(([label, value], i) => (
                 <p key={i} className="flex items-start gap-2">
-                  <FaChevronRight className="mt-1 text-cyan-500" size={12} />
+                  <ChevronRightIcon sx={{ mt: '4px', color: 'cyan.500', fontSize: 12 }} />
+
                   <span>
                     <strong className="font-medium">{label}:</strong> {value}
                   </span>
