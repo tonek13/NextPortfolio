@@ -1,7 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { FaChevronRight } from 'react-icons/fa';
+import { FaChevronRight } from 'react-icons/fa6';
+
 
 export default function About() {
   return (

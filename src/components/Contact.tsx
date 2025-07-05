@@ -1,6 +1,7 @@
 'use client';
+import { FaLocationDot, FaPhone, FaEnvelope } from 'react-icons/fa6';
 
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+
 
 export default function Contact() {
   return (
@@ -21,7 +22,7 @@ export default function Contact() {
           <div className="space-y-8 shadow-lg p-6 rounded-md">
             {/* Address */}
             <div className="flex items-start gap-4">
-              <FaMapMarkerAlt className="text-cyan-500 mt-1" />
+              <FaLocationDot className="text-cyan-500 mt-1" />
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <p>A108 Adam Street, New York, NY 535022</p>

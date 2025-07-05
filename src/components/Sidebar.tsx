@@ -8,13 +8,13 @@ import {
   FaSkype,
   FaTwitter,
   FaUser,
-  FaFileAlt,
+  FaFile ,
   FaImages,
   FaServer,
   FaEnvelope,
   FaBars,
-  FaTimes,
-} from "react-icons/fa";
+  FaXmark,
+} from "react-icons/fa6";
 import { RiHome5Line } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,7 +43,7 @@ export default function Sidebar() {
             onClick={() => setIsOpen(false)}
             className="text-white text-2xl"
           >
-            <FaTimes />
+            <FaXmark />
           </button>
         </div>
 
@@ -78,7 +78,7 @@ export default function Sidebar() {
         <nav className="mt-12 px-10 space-y-6 text-lg">
           <SidebarLink icon={<RiHome5Line />} label="Home" href="#hero" />
           <SidebarLink icon={<FaUser />} label="About" href="#about" />
-          <SidebarLink icon={<FaFileAlt />} label="Resume" href="#resume" />
+          <SidebarLink icon={<FaFile  />} label="Resume" href="#resume" />
           <SidebarLink icon={<FaImages />} label="Projects" href="#portfolio" />
           <SidebarLink icon={<FaServer />} label="Services" href="#services" />
           <SidebarLink icon={<FaEnvelope />} label="Contact" href="#contact" />

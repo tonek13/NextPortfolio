@@ -2,12 +2,12 @@
 
 import {
   FaBriefcase,
-  FaRegFileAlt,
+  FaRegFile,
   FaChartBar,
   FaBinoculars,
   FaSun,
-  FaCalendarAlt,
-} from 'react-icons/fa';
+  FaCalendar,
+} from 'react-icons/fa6';
 
 const services = [
   {
@@ -17,7 +17,7 @@ const services = [
       'Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident',
   },
   {
-    icon: <FaRegFileAlt size={20} />,
+    icon: <FaRegFile size={20} />,
     title: 'Dolor Sitema',
     description:
       'Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
@@ -41,7 +41,7 @@ const services = [
       'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium',
   },
   {
-    icon: <FaCalendarAlt size={20} />,
+    icon: <FaCalendar size={20} />,
     title: 'Eiusmod Tempor',
     description:
       'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi',
